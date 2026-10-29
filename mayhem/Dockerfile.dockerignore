@@ -1,0 +1,8 @@
+# Per-Dockerfile ignore list: overrides upstream's root .dockerignore, which drops .git. The commit
+# image must hold the full history (SPEC §6.2 item 2); only local build outputs are left out.
+build/
+*.o
+*.a
+*.so
+node_modules/
+vcpkg_installed/

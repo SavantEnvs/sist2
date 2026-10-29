@@ -1,0 +1,9 @@
+project: savantenvs/sist2
+target: highlight_fuzz
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/highlight_fuzz/testsuite
+cmds:
+  - cmd: /mayhem/highlight_fuzz
+    libfuzzer: true
+    timeout: 5
